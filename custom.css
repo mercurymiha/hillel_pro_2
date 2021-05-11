@@ -1,0 +1,20 @@
+
+.back_div {
+    width: 100%;
+    margin: 12 12 12 12;
+    display: inline;
+    position: fixed;
+    bottom: 10px;
+}
+.back_ground {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    margin: 20px;
+    background-color: rgb(238, 130, 130);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-top: rgb(130, 238, 238);
+}
