@@ -2,14 +2,17 @@ window.onload = function() {
     document.getElementById ("butt_click").onclick = send;
 };
 
-function counter1() {
-    let message_counter = 0;
-
-    return message_counter;
-};
-
 function send() {
     let text_mess = document.getElementById ("inp_mess").value;
+    let message_delete = document.getElementById ("check_delete");
+
+    if (message_delete.checked) {
+        console.log("checked");
+
+        setTimeout(deleting_message, 1000);
+    } else {
+        console.log("unchecked");
+    }
 
     console.log(text_mess);
     let div_element = create_buttons();
@@ -19,6 +22,10 @@ function send() {
     return text_mess;
     
 
+};
+
+function say_hi() {
+    
 };
 
 function create_buttons() {
