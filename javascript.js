@@ -1,7 +1,6 @@
 window.onload = function() {
     document.getElementById ("butt_click").onclick = send;
 };
-
 function send() {
     let text_mess = document.getElementById ("inp_mess").value;
     let message_delete = document.getElementById ("check_delete");
@@ -9,7 +8,7 @@ function send() {
     if (message_delete.checked) {
         console.log("checked");
 
-        setTimeout(deleting_message, 1000);
+        setTimeout(deleting_message, 5000);
     } else {
         console.log("unchecked");
     }
@@ -23,9 +22,12 @@ function send() {
     
 
 };
-
-function say_hi() {
-    
+function deleting_message () {
+    alert('Удаление тест');
+    let test = document.getElementsByClassName("back_ground");
+    while ((elem = test[0])) { 
+        elem.parentNode.removeChild(elem);
+      }
 };
 
 function create_buttons() {
